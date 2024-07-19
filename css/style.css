@@ -1,0 +1,200 @@
+/*
+MIT License
+Cyril Monkewitz, 2024
+*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  user-select: none;
+  background-color: black;
+}
+
+body {
+  background: black;
+  color: black;
+}
+
+#tapspaceContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.myspaceapp {
+  background: black;
+  height: 100%;
+  width: 100%;
+}
+
+.meters {
+  margin-top: 5px;
+  color: #FFFFFF;
+}
+
+.meters .count {
+  color: #00FFFF;
+}
+
+.tree-space .tree-placeholder {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50%;
+}
+
+.tree-space .tree-node {
+  background-color: DodgerBlue;
+  text-align: center;
+  padding: 0;
+  background-position: center center;
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #39FF14;
+  font-weight: bold;
+  font-family: 'Iceland', sans-serif;
+  text-shadow: 0 0 5px #9400D3, 0 0 10px #9400D3;
+  transition: background-image 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.tree-space.current .tree-node {
+  background-color: MistyRose;
+  padding: 0;
+}
+
+.tree-node div {
+  margin: 0.5rem 0;
+}
+
+.top-number {
+  color: #39FF14;
+}
+
+.bottom-number {
+  color: #39FF14;
+}
+
+.pink {
+  color: #FF6699;
+  text-shadow: 0 0 5px #00008B, 0 0 10px #00008B;
+}
+
+.green {
+  color: #39FF14;
+  text-shadow: 0 0 5px #9400D3, 0 0 10px #9400D3;
+}
+
+.comic {
+  font-family: "Comic Sans MS", "Comic Sans", "Comic Neue", sans-serif;
+}
+
+.widget {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+  font-family: 'Iceland', sans-serif;
+  color: #FFFFFF;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.widget .input-group {
+  display: flex;
+  align-items: center;
+}
+
+.widget input {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  -moz-appearance: textfield;
+  padding: 0;
+  margin: 0 3px;
+  border: 0;
+  font-family: 'Iceland', sans-serif;
+  color: #FFA500;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.widget input::-webkit-outer-spin-button,
+.widget input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.widget input:focus {
+  outline: none;
+  border: 0;
+}
+
+.widget button {
+  height: 30px;
+  padding: 5px 10px;
+  border: 2px solid #FFA500;
+  background: rgba(255, 165, 0, 0.5);
+  color: #FFFFFF;
+  font-family: 'Iceland', sans-serif;
+  cursor: pointer;
+}
+
+#errorMessage {
+  color: red;
+  display: none;
+  margin-bottom: 5px;
+}
+
+.legend {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 4;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: 'Iceland', sans-serif;
+  color: #FFFFFF;
+  user-select: none;
+  pointer-events: none;
+}
+
+.legend .green {
+  color: #39FF14;
+  text-shadow: 0 0 5px #9400D3, 0 0 10px #9400D3;
+}
+
+.legend .pink {
+  color: #FF6699;
+  text-shadow: 0 0 5px #00008B, 0 0 10px #00008B;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-25 {
+  opacity: 0.25;
+}
+
+.opacity-125 {
+  opacity: 0.125;
+}
+
+.opacity-0 {
+  opacity: 0;
+}

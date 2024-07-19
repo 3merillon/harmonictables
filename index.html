@@ -1,0 +1,35 @@
+<!--
+MIT License
+Cyril Monkewitz, 2024
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Harmonic Tables Visualizer</title>
+  <meta name="viewport" content="width=device-width, height=device-height, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="tapspaceContainer">
+    <div id="tapspace" class="myspaceapp"></div>
+  </div>
+  <div class="widget">
+    <div id="errorMessage">Please enter a prime number.</div>
+    <div class="input-group">
+      <label for="harmonicBase">harmonic base:</label>
+      <input type="number" id="harmonicBase" value="2" min="1" step="1">
+      <button id="viewTree" disabled>view tree</button>
+    </div>
+    <div class="meters"># of nodes: <span class="count">0</span> <span>(max: 500)</span></div>
+  </div>
+  <div class="legend">
+    <div><span class="green">green</span>: non-prime numerator or denominator</div>
+    <div><span class="pink">pink</span>: prime numerator</div>
+  </div>
+  <script src="https://unpkg.com/tapspace@2.0.0-alpha.15/dist/tapspace.min.js"></script>
+  <script src="js/javascript.js"></script>
+</body>
+</html>
