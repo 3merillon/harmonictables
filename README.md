@@ -8,9 +8,6 @@ Welcome to the Harmonic Tables Visualization project! This interactive web appli
 
 Harmonic Tables organize rational numbers into a visual structure, revealing the intricate relationships between numerators and denominators. Each prime number can be represented in such a table, showcasing the natural harmonics derived from a base wave division.
 
-
-If you are interested in learning more about Relative Music Theory (RMT), which proposes defining a note's pitch relative to another note rather than choosing between fixed values..
-
 ## How to Use
 
 The best way to navigate the Harmonic Tables Visualization is to click on planets, although you can also pan and zoom around. The navigation loading is flawed, and if you go too deep or insert a table, you can crash your browser or run out of memory. So, if you feel it slow down, you should probably give up.
