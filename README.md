@@ -34,4 +34,5 @@ Cyril Monkewitz, 2024
 
 ---
 
+Demo : https://cyrilmonkewitz.com/harmonictables/
 Enjoy exploring the Harmonic Tables and happy learning!
